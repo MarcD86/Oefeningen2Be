@@ -10,6 +10,21 @@ package nl.novi.opdrachten.methodes;
 public class DeelbaarDoorVijf {
 
     public static void main(String[] sammieKijkOmhoog) {
+
+
         int chosenNumber = 44;
+
+        System.out.println(devide(chosenNumber));
+
     }
+
+    public static String devide(int number){
+        if(number % 5 == 0){
+            return "deelbaar door vijf";
+        }
+        else{
+            return "ondeelbaar door vijf";
+        }
+    }
+
 }

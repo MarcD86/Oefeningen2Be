@@ -24,4 +24,28 @@ package nl.novi.opdrachten.methodes;
  */
 
 public class DeelbaarDoorX {
+
+    public static String DeelbaarDoorX(int number, int divisible) {
+
+        if (number % divisible == 0) {
+            return number + " is divisible " + divisible + " divided by = " + (number / divisible);
+        }
+        else if (number % divisible != 0) {
+                if(number % divisible < divisible ){
+                return number + " is not divisible " + divisible + "\ndecrease with number " + (number % divisible);}
+                else if (number % divisible > divisible){
+                    return number + " is not divisible " + divisible + "\nincrease with number " + (number % divisible);}
+                }
+            return "non valid";
+    }
+
+        public static void main (String[]args){
+
+            String test = new DeelbaarDoorX().toString();
+            test = DeelbaarDoorX(19, 3);
+
+
+            System.out.println(test);
+
+    }
 }
